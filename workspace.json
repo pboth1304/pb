@@ -2,6 +2,7 @@
     "version": 2,
     "projects": {
         "jump-n-run": "apps/jump-n-run",
-        "jump-n-run-e2e": "apps/jump-n-run-e2e"
+        "jump-n-run-e2e": "apps/jump-n-run-e2e",
+        "jump-n-run-feature-level-generator": "libs/jump-n-run/feature/level-generator"
     }
 }

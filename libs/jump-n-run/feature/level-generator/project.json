@@ -1,0 +1,25 @@
+{
+    "root": "libs/jump-n-run/feature/level-generator",
+    "sourceRoot": "libs/jump-n-run/feature/level-generator/src",
+    "projectType": "library",
+    "tags": [],
+    "targets": {
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": [
+                    "libs/jump-n-run/feature/level-generator/**/*.{ts,tsx,js,jsx}"
+                ]
+            }
+        },
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/libs/jump-n-run/feature/level-generator"],
+            "options": {
+                "jestConfig": "libs/jump-n-run/feature/level-generator/jest.config.js",
+                "passWithNoTests": true
+            }
+        }
+    }
+}
