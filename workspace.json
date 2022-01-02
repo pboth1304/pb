@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "jump-n-run": "apps/jump-n-run",
+    "jump-n-run-e2e": "apps/jump-n-run-e2e"
+  }
+}

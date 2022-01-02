@@ -1,0 +1,28 @@
+{
+  "root": "apps/jump-n-run-e2e",
+  "sourceRoot": "apps/jump-n-run-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/jump-n-run-e2e/cypress.json",
+        "devServerTarget": "jump-n-run:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "jump-n-run:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/jump-n-run-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["jump-n-run"]
+}
